@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+  </head>
+  <style>
+    body {
+      /* b/ackground-color: grey; */
+      font-size: 1.4rem;
+    }
+    form {
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      border: white 2px solid;
+      gap: 10px;
+
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .container {
+      margin: 20px auto;
+      width: 40%;
+    }
+    input,
+    select {
+      /* border-radius: 10px; */
+      padding: 10px;
+    }
+    h2 {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h2>Sign up form</h2>
+      <form action="Thankyou.htm" method="get">
+        <input type="hidden" value="" name="id" />
+        <label for="first"> first name</label>
+        <input type="text" required name="firstName" id="first" />
+        <label for="last"> last name</label>
+
+        <input type="text" required name="lastName" id="last" />
+        <label for="mail"> email:</label>
+        <input type="email" name="" id="mail" />
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" />
+        <label for="password2"> enter password again</label>
+
+        <input type="password" name="password" id="password" />
+        <label for="faculty"> faculty :</label>
+        <select name="faculty" id="faculty">
+          <option value="commerce">commerce</option>
+          <option value="medicine">medicine</option>
+          <option value="information">information</option>
+          <option value="ather">Audi</option>
+        </select>
+
+        <label for="date"> Birth Date </label>
+
+        <input type="date" name="date" id="date" />
+        <label for="">upload image</label>
+        <input type="file" name="" id="file" />
+        <p>Please select your gender :</p>
+
+        <div>
+            <input type="radio" id="male" name="gender" value="male" />  
+          <label for="male">male</label><br />
+        </div>
+        <div>
+            <input type="radio" id="femal" name="gender" value="female" />  
+          <label for="femal">femal</label><br />
+        </div>
+
+        <label for=""> Interests</label>
+        <div>
+          <input type="checkbox" name="" value="" />
+          <label for="vehicle1"> reading</label><br />
+        </div>
+        <div>
+          <input type="checkbox" name="" value="Car" />
+          <label for="vehicle2"> swiming</label><br />
+        </div>
+        <div>
+          <input type="checkbox" name="vehicle3" value="Boat" checked />
+          <label for="vehicle3"> Programming</label><br /><br />
+        </div>
+
+        <div>
+          <input type="checkbox" name="" id="check" />
+          <label for="check"> I agreed to terms and condition</label>
+        </div>
+        <label for="area"></label>
+        <textarea
+          name=""
+          id="area"
+          cols="30"
+          rows="10"
+          placeholder="enter any thing about you "
+        ></textarea>
+        <input type="reset" value="reset the form" />
+        <input type="submit" value="submit here " />
+      </form>
+    </div>
+  </body>
+</html>
