@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+  </head>
+  <script src="index.js"></script>
+
+  <style>
+
+
+table, th, td {
+  border: 1px solid black;
+}
+  </style>
+
+
+
+
+  <body>
+    <script>
+      // 1
+      alert("welcome to my site");
+      var name = prompt("please enter your name");
+      document.write(`<h1> welcome ${name}</h1>`);
+    </script>
+
+    <button onclick="askUser()">askuser</button>
+    <button onclick="evalute()">evalute</button>
+
+    <button onclick="contactinfo()">enter contact info</button>
+
+
+<table>
+  <tr>
+    <td> the name </td>
+    <td id="name"> </td>
+  </tr>
+  <tr>
+    <tr>
+      <td>birth year </td>
+      <td id="age"> year </td>
+
+
+    </tr>
+    <tr>
+      <td>age  </td>
+      <td id="year">age   </td>
+    </tr>
+  </tr>
+</table>    
+  </body>
+  <script>
+    function contactinfo() {
+      var name;
+      var age;
+      while (true) {
+        name = prompt("enter yourn name");
+        if (name) {
+          break;
+        }
+      }
+      while (true) {
+        age = parseInt(prompt("enteer birth year :"));
+        if (age && age < 2010 && age > 1995) {
+          break;
+        }
+      }
+
+      // document.write(``
+      // )
+
+      document.getElementById("name").innerText= name;
+      document.getElementById("age").innerText = age;
+      document.getElementById("year").innerText = (2022-age)
+      // document.write(` name : ${name} <br>`);
+      // document.write(` birth year : ${age} <br> `);
+      // document.write(` age : ${2022 - age} <br> `);
+    }
+  </script>
+</html>
